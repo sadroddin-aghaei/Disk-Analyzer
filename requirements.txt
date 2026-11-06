@@ -1,0 +1,4 @@
+# Runtime dependencies (pinned). PySide6 6.10.2 ships wheels for Windows x64/ARM64
+# and universal2 macOS (macOS 13+), which is why it is pinned instead of 6.11+.
+PySide6-Essentials==6.10.2
+psutil==7.2.2

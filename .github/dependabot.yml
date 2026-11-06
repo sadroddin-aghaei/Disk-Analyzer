@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly }
+    groups:
+      actions: { patterns: ["*"] }
+  - package-ecosystem: pip
+    directory: /
+    schedule: { interval: monthly }
+    ignore:
+      # PySide6 >= 6.11 raises the macOS minimum; bump deliberately.
+      - dependency-name: "PySide6-Essentials"
+        update-types: ["version-update:semver-minor"]

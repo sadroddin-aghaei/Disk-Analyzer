@@ -1,0 +1,14 @@
+Disk Analyzer — third-party components
+======================================
+
+Disk Analyzer itself: MIT License (see LICENSE).
+
+* Qt for Python (PySide6) / Qt 6 — LGPL-3.0 (https://www.qt.io/qt-licensing).
+  Qt libraries are shipped as separate, replaceable shared libraries inside the
+  application folder / bundle. Source: https://code.qt.io and https://pypi.org/project/PySide6/
+* psutil — BSD-3-Clause (https://github.com/giampaolo/psutil)
+* Python — PSF License (https://docs.python.org/3/license.html)
+* PyInstaller (bootloader) — GPL-2.0-or-later with the bootloader exception
+  (https://github.com/pyinstaller/pyinstaller)
+* Vazirmatn font — SIL Open Font License 1.1, © The Vazirmatn Project Authors
+  (https://github.com/rastikerdar/vazirmatn). Full text: app/resources/fonts/OFL.txt

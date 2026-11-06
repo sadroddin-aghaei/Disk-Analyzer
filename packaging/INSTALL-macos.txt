@@ -1,0 +1,29 @@
+Disk Analyzer — macOS installation / نصب در مک
+==============================================
+
+English
+-------
+1. Open the DMG and drag "Disk Analyzer" onto the Applications shortcut.
+2. This build is NOT notarized by Apple (it is only ad-hoc signed). The first time,
+   right-click (or Control-click) the app in Applications, choose "Open", then "Open" again.
+   If macOS still blocks it: System Settings -> Privacy & Security -> "Open Anyway".
+3. To analyze protected folders (Desktop, Documents, external drives) macOS asks for permission.
+   For a whole-disk scan, grant Full Disk Access in System Settings -> Privacy & Security.
+4. Verify your download with the SHA256SUMS file:
+       shasum -a 256 Disk-Analyzer-<version>-macOS-<arch>.dmg
+5. Requires macOS 13 or newer. Use the Apple-Silicon DMG on M1 or newer, and the Intel DMG on Intel Macs.
+
+Disk Analyzer is read-only: it never changes, moves or deletes your files and
+never sends file names or paths anywhere.
+
+فارسی
+-----
+۱. فایل DMG را باز کنید و «Disk Analyzer» را روی میان‌بر Applications بکشید.
+۲. این نسخه توسط اپل Notarize نشده است (فقط امضای ad-hoc دارد). بار اول روی برنامه
+   راست‌کلیک (یا Control-کلیک) کنید، «Open» و دوباره «Open» را بزنید. اگر باز هم مسدود شد:
+   System Settings ← Privacy & Security ← «Open Anyway».
+۳. برای پوشه‌های محافظت‌شده (Desktop، Documents، دیسک‌های خارجی) macOS مجوز می‌خواهد.
+   برای اسکن کل دیسک، Full Disk Access را در Privacy & Security فعال کنید.
+۴. صحت فایل را با SHA256SUMS بررسی کنید:
+       shasum -a 256 Disk-Analyzer-<version>-macOS-<arch>.dmg
+۵. به macOS نسخه ۱۳ یا جدیدتر نیاز است. روی M1 و بالاتر از DMG اپل‌سیلیکون و روی مک‌های اینتل از DMG اینتل استفاده کنید.

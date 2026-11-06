@@ -1,0 +1,33 @@
+[project]
+name = "disk-analyzer"
+dynamic = ["version"]
+description = "Read-only, cross-platform disk usage analyzer with an interactive treemap (Persian RTL + English)."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Sadroddin Aghaei" }]
+
+[tool.ruff]
+line-length = 130
+target-version = "py312"
+extend-exclude = ["build", "dist"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "N", "SIM", "RUF"]
+ignore = ["E501", "RUF001", "RUF002", "RUF003", "B905", "SIM108"]
+
+[tool.ruff.lint.per-file-ignores]
+"DiskAnalyzer.spec" = ["F821", "E402"]
+"tests/*" = ["E402"]
+"scripts/*" = ["E402"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = true
+exclude = ["build/", "dist/", "DiskAnalyzer.spec"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

@@ -1,0 +1,30 @@
+Disk Analyzer — Windows installation / نصب در ویندوز
+=====================================================
+
+English
+-------
+1. Extract the whole ZIP file to a folder of your choice (e.g. C:\Apps\Disk-Analyzer).
+   Do not run DiskAnalyzer.exe from inside the ZIP preview.
+2. Double-click DiskAnalyzer.exe. No installation and no Python are required.
+3. Windows SmartScreen may warn that the app is from an unknown publisher because
+   the build is not code-signed. Click "More info" -> "Run anyway" if you trust the download.
+4. Verify your download with the SHA256SUMS file published next to it:
+       certutil -hashfile Disk-Analyzer-<version>-Windows-<arch>.zip SHA256
+5. To uninstall, delete the folder. Settings live in %APPDATA%\DiskAnalyzer.
+
+Disk Analyzer is read-only: it never changes, moves or deletes your files and
+never sends file names or paths anywhere.
+
+فارسی
+-----
+۱. کل فایل ZIP را در یک پوشه دلخواه استخراج کنید (مثلاً C:\Apps\Disk-Analyzer).
+   برنامه را از داخل پیش‌نمایش ZIP اجرا نکنید.
+۲. روی DiskAnalyzer.exe دوبار کلیک کنید. نیازی به نصب یا پایتون نیست.
+۳. چون این نسخه امضای دیجیتال ندارد، ممکن است SmartScreen هشدار دهد.
+   در صورت اطمینان از منبع دانلود، «More info» و سپس «Run anyway» را بزنید.
+۴. صحت فایل دانلودشده را با فایل SHA256SUMS بررسی کنید:
+       certutil -hashfile Disk-Analyzer-<version>-Windows-<arch>.zip SHA256
+۵. برای حذف، پوشه را پاک کنید. تنظیمات در %APPDATA%\DiskAnalyzer ذخیره می‌شود.
+
+دیسک آنالایزر فقط‌خواندنی است؛ هرگز فایل‌های شما را تغییر نمی‌دهد، جابه‌جا یا حذف
+نمی‌کند و نام یا مسیر فایل‌ها را به هیچ جا ارسال نمی‌کند.
